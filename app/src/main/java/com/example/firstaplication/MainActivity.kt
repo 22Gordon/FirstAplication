@@ -2,7 +2,7 @@ package com.example.firstaplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//BRANCH 1 PUSH3
+//Master push
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

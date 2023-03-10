@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<Button
-    android:id="@+id/b1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text = "Button1"
-    android:layout_centerHorizontal="true"
-    />
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Resultado"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
         android:id="@+id/b2"
@@ -41,28 +41,29 @@
         android:layout_below="@id/b2"
         android:orientation="horizontal">
 
-        <Button
+        <EditText
+            android:inputType="number"
             android:id="@+id/b4"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Button4"
             android:layout_marginEnd="5dp" />
 
-        <Button
+        <EditText
+            android:inputType="number"
             android:id="@+id/b5"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Button5"
             android:layout_marginEnd="5dp" />
 
-        <Button
+        <EditText
+            android:inputType="number"
             android:id="@+id/b6"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Button6"
+
             android:layout_marginEnd="5dp" />
 
     </LinearLayout>
@@ -76,6 +77,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="5dp"
         android:layout_marginStart="5dp"
+        android:onClick="clickbutton"
 
         />
 
@@ -103,23 +105,23 @@
 
     </LinearLayout>
 
-        <Button
-            android:id="@+id/b10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button10"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="5dp"
-            android:layout_above="@id/l2"/>
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button10"
+        android:layout_marginEnd="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/l2"/>
 
-        <Button
-            android:id="@+id/b11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button11"
-            android:layout_above="@id/b10"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="5dp" />
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button11"
+        android:layout_above="@id/b10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp" />
 
 
 
